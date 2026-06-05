@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: blog-management-system
+    runtime: php
+    buildCommand: composer install --no-dev --optimize-autoloader && php schema/migrate_sqlite.php
+    startCommand: php -S 0.0.0.0:$PORT -t public/
+    envVars:
+      - key: DB_CONNECTION
+        value: sqlite
+      - key: DB_NAME
+        value: blog_local
+    disk:
+      name: blog-data
+      mountPath: /opt/render/project/src
+      sizeGB: 1

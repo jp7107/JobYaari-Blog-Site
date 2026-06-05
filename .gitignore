@@ -1,0 +1,33 @@
+# Dependencies
+/vendor/
+composer.lock
+
+# Environment files
+.env
+
+# Database files
+*.sqlite
+*.db
+
+# IDE files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Test files
+.phpunit.result.cache
+test_database.sqlite
+coverage/
+
+# Log files
+*.log
+
+# Uploaded files (optional - include if you want to track uploads)
+# public/uploads/*
+# !public/uploads/.gitkeep
+
+# OS files
+Thumbs.db
