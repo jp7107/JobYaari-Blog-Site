@@ -1,0 +1,14 @@
+vendor/
+.git/
+.gitignore
+*.md
+.env
+*.sqlite
+*.db
+.DS_Store
+.vscode/
+.idea/
+tests/
+.phpunit.result.cache
+test_database.sqlite
+coverage/
